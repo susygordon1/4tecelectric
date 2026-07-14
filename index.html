@@ -281,8 +281,10 @@
     border-top:1px solid var(--hairline);
   }
   .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:60px;}
-  .contact h2{font-size:clamp(30px,4vw,46px); margin-bottom:20px; line-height:1.05;}
-  .contact p{color:var(--conduit); font-size:16px; line-height:1.6; margin-bottom:34px; max-width:440px;}
+  .contact h2{font-size:clamp(30px,4vw,46px); margin-bottom:20px; line-height:1.05; max-width:none;}
+  .contact p{color:var(--conduit); font-size:16px; line-height:1.6; margin-bottom:34px; max-width:none;}
+  .contact-people{display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:8px;}
+  @media(max-width:760px){ .contact-people{grid-template-columns:1fr;} }
   .contact-plate{border:1px solid var(--hairline);}
   .cline{display:flex; justify-content:space-between; align-items:center; padding:22px 26px; border-bottom:1px solid var(--hairline); gap:16px;}
   .cline:last-child{border-bottom:none;}
@@ -482,22 +484,19 @@
 </section>
 
 <section id="contact" class="contact">
-  <div class="wrap contact-grid">
-    <div>
-      <div class="eyebrow"><span class="dash"></span>GET A QUOTE</div>
-      <h2>Tell us about the job.<br>We'll call you back.</h2>
-      <p>General contractor bidding a new build, or a property owner planning a remodel — reach out and we'll walk the scope with you.</p>
-      <a class="btn-primary" href="tel:6829708325"><span>&#9679;</span> CALL (682) 970-8325</a>
-    </div>
-    <div class="contact-plate">
-      <div class="cline"><div class="k">Thomas Delgado</div><a class="v" href="tel:6829708325">(682) 970-8325</a></div>
-      <div class="cline"><div class="k">Email</div><a class="v" href="mailto:thomas@4tec-electric.com" style="font-size:15px;">thomas@4tec-electric.com</a></div>
-      <div class="cline"><div class="k">Service Area</div><div class="v" style="font-size:17px;">Dallas–Fort Worth</div></div>
-      <div class="cline"><div class="k">Scope</div><div class="v" style="font-size:16px;">Ind. / Comm. / Res.</div></div>
-    </div>
-    <div class="contact-plate" style="margin-top:12px; opacity:0.75;">
-      <div class="cline"><div class="k">Armando Camacho</div><a class="v" href="tel:9562208576" style="color:var(--arc); font-size:17px;">(956) 220-8576</a></div>
-      <div class="cline"><div class="k">Email</div><a class="v" href="mailto:camacho24tec@gmail.com" style="color:var(--arc); font-size:14px;">camacho24tec@gmail.com</a></div>
+  <div class="wrap">
+    <div class="eyebrow"><span class="dash"></span>GET A QUOTE</div>
+    <h2>Tell us about the job. We'll call you back.</h2>
+    <p>General contractor bidding a new build, or a property owner planning a remodel — reach out and we'll walk the scope with you. We work across the Dallas–Fort Worth Metroplex, on industrial, commercial, and residential projects alike.</p>
+    <div class="contact-people">
+      <div class="contact-plate">
+        <div class="cline"><div class="k">Thomas Delgado</div><a class="v" href="tel:6829708325">(682) 970-8325</a></div>
+        <div class="cline"><div class="k">Email</div><a class="v" href="mailto:thomas@4tec-electric.com" style="font-size:15px;">thomas@4tec-electric.com</a></div>
+      </div>
+      <div class="contact-plate" style="opacity:0.75;">
+        <div class="cline"><div class="k">Armando Camacho</div><a class="v" href="tel:9562208576" style="color:var(--arc); font-size:17px;">(956) 220-8576</a></div>
+        <div class="cline"><div class="k">Email</div><a class="v" href="mailto:camacho24tec@gmail.com" style="color:var(--arc); font-size:14px;">camacho24tec@gmail.com</a></div>
+      </div>
     </div>
   </div>
 </section>
